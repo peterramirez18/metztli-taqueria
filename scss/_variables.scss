@@ -1,0 +1,33 @@
+// ## Colors
+
+$Yellow: #E0A43D;
+$Brown: #160D0B;
+$Cream: #F9F8DC;
+$White: #FFFFFF;
+
+$breakpoint-small: 728px;
+$breakpoint-medium: 1098px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+
+
+.hide-for-pc{
+    @media (min-width: $breakpoint-medium) {
+        display: none !important;
+    }
+}
+
+.hide-for-table{
+    @media (max-width: $breakpoint-medium) {
+        display: none !important;
+    }
+}
+
+.hide-for-phone{
+    @media (min-width: $breakpoint-small) {
+        display: none !important;
+    }
+}
